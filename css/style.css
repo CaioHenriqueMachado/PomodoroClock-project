@@ -25,23 +25,29 @@ div.container {
   padding: 1%;
 }
 
-
 div.config {
   background-color: lightseagreen;
-  height: 40px;
+  width: 50vw;
   display: flex;
   align-items: center;
+  text-align: end;
   justify-content: center;
   border-radius: 10px;
-  padding: 0px 10px;
+  padding: 10px;
+}
+
+div.config form {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
 }
 
 div.config input {
-  width: 100px;
+  width: 80px;
   height: 30px;
   padding: 5px;
-  margin-left: 5px;
-  margin-right: 20px;
+  margin: 0 10px;
   border-radius: 10px;
   border: none;
 }
@@ -64,8 +70,8 @@ button[type=submit] {
 
 div.circle{
   background-color: orange;
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
   border-radius: 200px;
   display: flex;
   flex-direction: column;
@@ -82,7 +88,6 @@ div.time {
   align-items: center;
   justify-content: space-between;
   border-radius: 10px;
-  
 }
 
 div.hour, div.minute, div.second {
@@ -137,4 +142,20 @@ div.assets ul li {
   display: block;
   list-style: none;
   cursor: pointer;
+}
+
+
+@media (max-width: 810px){
+  div.config {
+    width: 98vw;
+  }
+
+  div.circle {
+    width: 300px;
+    height: 300px;
+  }
+
+  div.time {
+    height: 70px;
+  }
 }

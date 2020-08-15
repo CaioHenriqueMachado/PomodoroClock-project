@@ -1,8 +1,140 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+/* Foi pego do DAFONT  */
+@font-face {
+  font-family: DS-Digital;
+  font-style: normal;
+  font-weight: normal;
+  src: url(./DS-DIGIT.TTF);
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+}
+
+div.container {
+  background-color: aqua;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1%;
+}
+
+
+div.config {
+  background-color: lightseagreen;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 0px 10px;
+}
+
+div.config input {
+  width: 100px;
+  height: 30px;
+  padding: 5px;
+  margin-left: 5px;
+  margin-right: 20px;
+  border-radius: 10px;
+  border: none;
+}
+
+input[type=number] { 
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+button[type=submit] {
+  border-radius: 10px;
+  border: 2px solid black;
+  background-color: orange;
+  width: 80px;
+  height: 30px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+
+div.circle{
+  background-color: orange;
+  width: 400px;
+  height: 400px;
+  border-radius: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div.time {
+  background-color: gray;
+  width: 250px;
+  height: 100px;
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  
+}
+
+div.hour, div.minute, div.second {
+  width: 70px;
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  font-family: 'DS-Digital', sans-serif, monospace;
+  font-size: 50pt;  
+}
+
+div.settings {
+  margin-top: 10px;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+}
+
+div.settings button {
+  width: 70px;
+  background-color: rgb(179, 117, 2);
+  border: none;
+  padding: 5px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 12pt;
+  cursor: pointer;
+}
+
+div.assets {
+  background-color: lightseagreen;
+  width: 80vw;
+  height: 40px;
+  border-radius: 10px;
+}
+
+div.assets ul {
+  height: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+div.assets ul li {  
+  height: 100%;
+  padding: 10px 5px;
+  font-size: 12pt;
+  text-transform: uppercase;
+  display: block;
+  list-style: none;
+  cursor: pointer;
 }

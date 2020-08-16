@@ -1,7 +1,7 @@
 <h1 align="center">Pomodoro Clock</h1>
 
 <div align="center">
-  <img src="./img/wll.svg" alt="Logo" height="200" width="200">
+  <img src="./img/wll.svg" alt="Logo" height="150" width="150">
 </div>
 
 <h2 align="center">Cronômetro de tarefas para ajudar na produtividade pessoal</h2>

@@ -97,3 +97,15 @@ function alterColor(value) {
     document.getElementById('divCircle').classList.remove('bgColorgreen');
   }
 }
+
+function playAudio(value) {
+  var audio = document.getElementById('audio');
+  if(value == 'stop') {
+    audio.pause();
+  }
+  else {
+    console.log('audio');
+    audio.src = `./audio/${value}.mp3`;
+    audio.play();
+  }
+}

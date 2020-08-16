@@ -29,14 +29,12 @@ div.container {
 .bgColorpurple {
   transition: 2s;
   background-color: purple !important;
-  
 }
 
 .bgColorgreen {
   transition: 2s;
   background-color: rgb(22, 160, 133) !important;
 }
-
 
 div.config {
   background-color: rgba(255, 255, 255, .5);
@@ -80,7 +78,6 @@ button[type=submit] {
   padding: 5px;
   cursor: pointer;
 }
-
 
 div.circle{
   background-color: rgb(255, 166, 0);
@@ -165,6 +162,11 @@ div.assets ul li {
   display: block;
   list-style: none;
   cursor: pointer;
+  border-radius: 10px;
+}
+
+audio {
+  border-radius: 15px;
 }
 
 

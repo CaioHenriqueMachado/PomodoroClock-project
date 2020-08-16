@@ -27,7 +27,7 @@
       <div id="text" class="text"></div>
       <div class="time">
         <div class="hour" id="hourDiv">00</div>:
-        <div class="minute" id="minuteDiv">02</div>:
+        <div class="minute" id="minuteDiv">30</div>:
         <div class="second" id="secondDiv">00</div>
       </div>
       <div class="settings">
@@ -38,10 +38,15 @@
     </div>
 
     <div class="assets">
+      <audio id="audio" loop autostart>
+      </audio>
       <ul>
-        <li>ocean</li>
-        <li>trovão</li>
-        <li>floresta</li>
+        <li onclick="playAudio('ocean')">ocean</li>  
+        <li onclick="playAudio('rain')">rain</li>
+        <li onclick="playAudio('forest')">forest</li>
+        <li onclick="playAudio('peace')">peace</li>
+        <li onclick="playAudio('cafe')">café</li>
+        <li onclick="playAudio('stop')">stop</li>
       </ul>
     </div>
   </div>

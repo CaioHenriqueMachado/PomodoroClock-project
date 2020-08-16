@@ -31,7 +31,7 @@ function ajustTimer(value) {
 }
 
 function startTimer() {
-  document.getElementById('adjust').classList.toggle('hidden');
+  document.getElementById('adjust').classList.add('hidden');
   document.getElementById('startButton').classList.toggle('hidden');
   document.getElementById('stopButton').classList.toggle('hidden');
   loading = setInterval( () => {start()}, 1000);
@@ -73,22 +73,24 @@ function start(){
 
 function stopTimer() {
   clearInterval(loading);
-  document.getElementById('adjust').classList.toggle('hidden');
+  document.getElementById('adjust').classList.remove('hidden');
   document.getElementById('startButton').classList.toggle('hidden');
   document.getElementById('stopButton').classList.toggle('hidden');
 }
 
 function resetTimer() {
   clearInterval(loading);
+  document.getElementById('adjust').classList.remove('hidden');
   document.getElementById('startButton').classList.remove('hidden');
   document.getElementById('stopButton').classList.add('hidden');
   ajustTimer(sessionSet.value);
   alterColor(false);
   breakMoment = false;
+  step = 1;
+  text.innerText = `Session ${step}`;
 }
 
 function alterColor(value) {
-  console.log('cor')
   if ( value == true) {
     document.getElementById('divContainer').classList.add('bgColorpurple');
     document.getElementById('divCircle').classList.add('bgColorgreen');
